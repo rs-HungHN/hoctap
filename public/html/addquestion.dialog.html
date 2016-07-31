@@ -1,0 +1,42 @@
+<div class="col-sm-12 col-sm-offset-2">
+  <md-dialog aria-label="Thêm câu hỏi mới"  ng-cloak>
+  <form >
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Thêm câu hỏi mới</h2>
+        <span flex></span>
+        <md-button class="md-icon-button fa fa-remove" ng-click="cancel()" aria-label="cancel"></md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+          
+          <div class="col-sm-6">
+            <br/>
+            <md-input-container class="md-block">
+              <label>Câu hỏi </label>
+              <textarea ng-model="question.question"  rows="5" md-select-on-focus></textarea>
+              <md-button class="md-primary md-raised md-mini">add code</md-button>
+            </md-input-container>
+          </div>
+          <div class="col-sm-6">
+            <br/>
+            <md-input-container class="md-block" ng-repeat="answer in question.answer">
+              <label>Câu trả lời </label>
+              <textarea ng-model="answer.content"  rows="5" md-select-on-focus></textarea>
+              <md-button class="md-primary md-raised md-mini">add code</md-button>
+            </md-input-container>
+              <hr>
+              <md-button class="md-primary md-raised md-mini">Thêm câu trả lời</md-button>
+          </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-button ng-click="cancel()">
+       Hủy
+      </md-button>
+      <md-button ng-click="createQuestion()">
+        Thêm câu hỏi
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
+</div>

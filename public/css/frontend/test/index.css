@@ -1,0 +1,17 @@
+/**
+ *
+ * @author: Lê Vĩnh Thiện - GMO Runsystem
+ * @date: 13/07/16
+ * 
+ */
+.color-white {
+	color: #fff !important;
+}
+.fixed-style {
+	background-color: #673AB7;
+	padding: 30px;
+	margin-top: 72px;
+}
+.btn-play{
+	padding: 20px 50px 20px 50px;
+}

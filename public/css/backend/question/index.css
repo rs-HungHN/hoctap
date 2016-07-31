@@ -1,0 +1,141 @@
+/**
+ *
+ * @author: Lê Vĩnh Thiện - GMO Runsystem
+ * @date: 13/07/16
+ * 
+ */
+body.md-toast-animating { overflow: auto !important; }
+.fix-nav {
+  margin-bottom: 0px;
+  padding: 10px;
+}
+.category .list-group{
+	margin-bottom: -1px;
+}
+.sub-category{
+	padding-left: 50px;
+}
+
+span i:hover{
+	transition: 0.25s;
+	color: red;
+}
+
+.scroll{
+    height: 100px;
+    overflow: auto;
+    position: relative;
+}
+.add-button{
+  
+}
+.color-white{
+  color: #fff!important;
+}
+.color-gray{
+  color: #EEEEEE!important;
+}
+.margin-5px{
+  margin: 5px;
+}
+.answer{
+  box-shadow: 0 -1px 1px -1px #333; 
+  padding-top: 20px;
+}
+.question-title{
+  box-shadow: 0 1px 1px -1px #333;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+md-toast{
+  position: fixed!important;
+  bottom: 0;
+  right: 20px!important;
+}
+
+md-list-item{
+  margin-top: 10px;
+  transition: 0.15s;
+  border-radius: 2px;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+}
+md-list-item:hover{
+  cursor: pointer;
+  background-color: gray;
+}
+md-list-item:hover p{
+  color: #FFFFFF;
+}
+
+.btn-add-course{
+  margin-top: -65px;
+}
+
+.ng-hide-add {
+  -webkit-animation:0.25s hide;
+  animation:0.25s hide;
+}
+
+@keyframes hide {
+  0% {
+    opacity:1;
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.02);
+  }
+  100% { 
+    opacity:0;
+    transform: scale(0.5);
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity:1;
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.02);
+  }
+  100% { 
+    opacity:0;
+    transform: scale(0.5);
+  }
+}
+
+
+.box-one.ng-hide-remove {
+  -webkit-animation:0.5s show;
+  animation:0.5s show;
+}
+
+@keyframes show {
+  0% {
+    opacity:0;
+    transform: scale(0.5);
+  }
+  70% {
+    transform: scale(1.02);
+  }
+  100% { 
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity:0;
+    transform: scale(0.5);
+  }
+  70% {
+    transform: scale(1.02);
+  }
+  100% { 
+    opacity:1;
+    transform: scale(1);
+  }
+}

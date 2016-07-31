@@ -1,0 +1,51 @@
+/**
+ *
+ * @author: Lê Vĩnh Thiện - GMO Runsystem
+ * @date: 13/07/16
+ * 
+ */
+body{
+	font-family: 'Roboto', sans-serif;
+}
+body.md-toast-animating { overflow: auto !important; }
+md-toast{
+  position: fixed!important;
+  right: 0!important;
+}
+.color-white {
+	color: #fff !important;
+}
+.fixed-style {
+	background-color: #673AB7;
+	margin-top: 72px;
+}
+.no-margin {
+	margin: 0px;
+}
+.no-margin-bottom {
+	margin-bottom: 0px;
+}
+.btn-padding {
+	padding: 10px 100px 10px 100px;
+}
+.fix-nav {
+	margin-bottom: 0px;
+	padding: 10px;
+}
+hr.line {
+    background: url("../../images/line.png") no-repeat center center transparent;
+    height: 15px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+/* Footer*/
+footer{
+	background-color: #673AB7;
+	padding-top: 50px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.footer{
+	color: #fff;
+}

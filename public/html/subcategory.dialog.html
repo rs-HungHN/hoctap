@@ -1,0 +1,76 @@
+<div class="col-sm-8 col-sm-offset-2">
+  <md-dialog aria-label="Mango (Fruit)"  ng-cloak>
+  <form name="subcategoryForm">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Thêm chủ đề mới cho "{{ targetCategory.title }}"</h2>
+        <span flex></span>
+        <md-button class="md-icon-button fa fa-remove" ng-click="cancel()" aria-label="remove"></md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content style="max-height: 550px!important; overflow-y: auto!important;">
+      <div class="md-dialog-content">
+        <md-input-container class="md-block">
+          <label>Title</label>
+          <input required ng-model="subcategory.title" name="title">
+          <div ng-messages="subcategoryForm.title.$error" role="alert">
+            <div ng-message="required">Không được bỏ trống tiêu đề.</div>
+          </div>
+        </md-input-container>
+         <md-input-container class="md-block">
+          <label>Description</label>
+          <textarea required ng-model="subcategory.description" md-maxlength="500" md-select-on-focus name="description" md-minlength="30"></textarea>
+          <div ng-messages="subcategoryForm.description.$error">
+            <div ng-message="required">Không được bỏ trống đoạn giới thiệu.</div>
+            <div ng-message="minlength">Phải có ít nhất 30 ký tự.</div>
+          </div>
+        </md-input-container>
+        <div layout-gt-sm="row">
+          <div flex style="line-height: 70px; font-weight: bolder;">
+           Số câu hỏi/ bài test:
+          </div>
+          <md-input-container flex>
+            <label>Số câu</label>
+            <md-select required ng-model="subcategory.nums">
+                <md-option  ng-repeat="h in static.array" value="{{h}}">{{h}}
+                </md-option>
+              </md-select>            
+            </md-input-container>
+            <div flex>
+              
+            </div>
+          </div>
+        <div layout-gt-sm="row">
+          <div flex style="line-height: 70px; font-weight: bolder;">
+            Thời gian test:
+          </div>
+          <md-input-container flex>
+            <label>Giờ</label>
+            <md-select required ng-model="timeTest.h">
+                <md-option ng-repeat="h in static.hours" value="{{h}}">{{h}}
+                </md-option>
+              </md-select>            
+            </md-input-container>
+            <md-input-container flex>
+            <label>Phút</label>
+            <md-select required ng-model="timeTest.m">
+                <md-option ng-repeat="m in static.min" value="{{ m }}">{{m}}
+                </md-option>
+              </md-select>            
+            </md-input-container>
+          </div>
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-button ng-click="cancel()">
+       Hủy
+      </md-button>
+      <md-button ng-click="return_subcategory(title, description, category_id)">
+        Tạo mới
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
+</div>
+
+

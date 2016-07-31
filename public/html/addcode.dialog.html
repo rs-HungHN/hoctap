@@ -1,0 +1,31 @@
+<div class="col-sm-6 col-sm-offset-1">
+  <md-dialog aria-label="Mango (Fruit)"  ng-cloak>
+  <form >
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Thêm code</h2>
+        <span flex></span>
+        <md-button class="md-icon-button fa fa-remove" ng-click="cancel()" ></md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <div class="md-dialog-content">
+         <md-input-container class="md-block">
+          <label>Copy code và dán vào đây</label>
+          <textarea ng-model="description" md-maxlength="500" rows="5" md-select-on-focus></textarea>
+        </md-input-container>
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <md-button ng-click="cancel()">
+       Hủy
+      </md-button>
+      <md-button ng-click="return_category(title, description)">
+        Chấp nhận
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
+</div>
+
+

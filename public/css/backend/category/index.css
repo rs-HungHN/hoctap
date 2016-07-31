@@ -1,0 +1,139 @@
+/**
+ *
+ * @author: Lê Vĩnh Thiện - GMO Runsystem
+ * @date: 12/07/16
+ * 
+ */
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body.md-toast-animating { overflow: auto !important; }
+md-card {
+  transition: 0.5s;
+}
+md-card:hover{
+  background-color: #E9E9E9;
+}
+md-toast{
+  position: fixed!important;
+  right: 0!important;
+}
+.category .list-group{
+	margin-bottom: -1px;
+}
+.sub-category{
+	padding-left: 50px;
+}
+
+span i:hover{
+	transition: 0.25s;
+	color: red;
+}
+.fix-nav {
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.scroll{
+    height: 100px;
+    overflow: auto;
+    position: relative;
+}
+.add-button{
+    margin-top: -30px;
+}
+.color-white{
+  color: #fff!important;
+}
+.color-gray{
+  color: #EEEEEE!important;
+}
+.margin-5px{
+  margin: 5px;
+}
+.answer{
+  box-shadow: 0 -1px 1px -1px #333; 
+  padding-top: 20px;
+}
+.question-title{
+  box-shadow: 0 1px 1px -1px #333;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.list-group-item{
+  transition: 0.25s;
+}
+.list-group-item:hover{
+  background-color: #FAFAFA;
+  padding-left: 10px;
+  font-weight: bold;
+}
+/* when hiding the picture */
+.ng-hide-add         { animation:0.5s lightSpeedOut ease; }
+
+/* when showing the picture */
+.ng-hide-remove      { animation:0.5s flipInX ease; }
+
+/* ANIMATIONS (FROM ANIMATE.CSS) ======================== */
+/* flip in */
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    transform: perspective(400px);
+    transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+/* light speed out */
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}

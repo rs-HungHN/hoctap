@@ -1,0 +1,22 @@
+body{
+	overflow-x: hidden;
+}
+/**
+ *
+ * Success
+ *
+ */
+.success{
+  min-height: 600px;
+  background-color: #3F51B5;
+  color: #fff;
+}
+.success{
+  padding-top: 150px;
+}
+.success h1{
+  text-transform: uppercase;
+}
+.btn-success{
+  padding: 5px 30px 5px 30px;
+}
